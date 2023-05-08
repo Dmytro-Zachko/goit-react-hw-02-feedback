@@ -35,7 +35,6 @@ state = {
 
     countTotalFeedback = () => {
         const TotalVal = Object.values(this.state)
-        const TotalValFd = TotalVal.length
         const TotalFeedBack = TotalVal.reduce((previousValue, number) => {
   return previousValue + number;
         }, 0);

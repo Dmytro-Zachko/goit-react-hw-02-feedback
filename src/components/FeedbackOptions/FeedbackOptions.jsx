@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes, { array } from 'prop-types';
+import PropTypes from 'prop-types';
 import { OptionList,OptionListItem } from "./FeedbackOptions.styled";
 
 export const FeedbackOptions =  ({options, onLeaveFeedback}) => {
@@ -10,4 +10,9 @@ export const FeedbackOptions =  ({options, onLeaveFeedback}) => {
       })}</OptionList>
     
     )
+}
+
+FeedbackOptions.propTypes = {
+    onLeaveFeedback: PropTypes.func,
+    options: PropTypes.array,
 }
